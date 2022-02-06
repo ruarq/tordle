@@ -44,6 +44,7 @@ auto main() -> int
 	const auto solution = solutions.at(solution_pos);
 
 	std::string guess;
+	bool user_won = false;
 	for (int i = 0; i < 6; ++i)
 	{
 		bool guess_again;
@@ -98,9 +99,15 @@ auto main() -> int
 			}
 		}
 		std::cout << "\n";
+
+		if (guess == solution)
+		{
+			user_won = true;
+			break;
+		}
 	}
 
-	if (guess == solution)
+	if (user_won)
 	{
 		std::cout << "You win!\n";
 	}
