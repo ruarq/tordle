@@ -37,8 +37,8 @@ auto main() -> int
 {
 	std::srand(std::time(nullptr));
 
-	const auto solutions = LoadWords("solutions");
-	const auto words = LoadWords("words");
+	const auto solutions = LoadWords("data/solutions");
+	const auto words = LoadWords("data/words");
 
 	const auto solution_pos = std::rand() % solutions.size();
 	const auto solution = solutions.at(solution_pos);
