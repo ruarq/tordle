@@ -22,6 +22,3 @@ Run:
 ```bash
 ./tordle
 ```
-
-### Windows
-Sorry!
