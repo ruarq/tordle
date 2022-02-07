@@ -3,7 +3,7 @@ It's wordle in the terminal!
 
 ## Build instructions
 ### Linux
-Dependencies: `g++`, `make` and `git`
+Dependencies: `g++` and `make`
 
 Clone:
 ```bash
