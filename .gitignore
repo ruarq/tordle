@@ -3,6 +3,10 @@
 bin
 obj
 
-# files
+# xcode4
+*.xcodeproj
+*.xcworkspace
+
+# gmake/gmake2
 Makefile
 *.make

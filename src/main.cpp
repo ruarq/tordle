@@ -39,6 +39,12 @@ auto main() -> int
 
 	const auto solutions = LoadWords("data/solutions");
 	const auto words = LoadWords("data/words");
+	
+	if (solutions.size() == 0 || words.size() == 0)
+	{
+		std::cout << "Couldn't load 'data/solutions' or 'data/words'\n";
+		return 1;
+	}
 
 	const auto solution_pos = std::rand() % solutions.size();
 	const auto solution = solutions.at(solution_pos);
